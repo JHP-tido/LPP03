@@ -21,7 +21,8 @@ class RockPaperScissors
                 else
                         "el humano gana"
                 end
-        end
+		end
 
+	end
 end
 ~           

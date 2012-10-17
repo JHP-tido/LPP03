@@ -11,8 +11,8 @@ task :test do
 
 end
 
-
-task :t, :test name do |t,args|
+desc "Run a specific test, provide a test name or a /regexp/"
+task :t, :test_name do |t,args|
  test_name = args[:test_name] || 'test_play'
 sh "ruby -w -Ilib test/tc_rps.rb --name #{test_name}"
 end
