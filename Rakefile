@@ -1,12 +1,12 @@
 task :default => :test
 
-desc "Run ./bin/radio.rb "
+desc "Run ./bin/rps.rb "
 task :ejecutar do
-  sh "ruby -Ilib bin/classrockpaperscissors.rb"
+  sh "ruby -Ilib bin/rps.rb"
 end
 
-desc "Run ./test/tc_radio.rb "
+desc "Run ./test/tc_rps.rb "
 task :test do
-  sh "ruby -Ilib test/tc_classrockpaperscissors.rb"
+  sh "ruby -Ilib test/tc_rps.rb"
 
 end
