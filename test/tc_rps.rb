@@ -12,12 +12,12 @@ end
 def correct_answrt(x)
         return true if x =~/There is a tie/
         return true if x =~ /Computer wins; (\w+) defeats (\w+)/ and RockPaperScissors.defeat[$1.to_sym] == $2.to_sym
-        return true if x=~ /Well done. (\w+) beats (\w+)/ and ROckPaperScirssors.defeat[$1.to_sym] == $2.to_sym
-
+        return true if x=~ /Well done. (\w+) beats (\w+)/ and RockPaperScirssors.defeat[$1.to_sym] == $2.to_sym
+end
 
 
 def test_play
-30.tomes do
+30.times do
         assert correct_answer(RockPaperScissors.play('scissors'))
 end
 
@@ -41,4 +41,5 @@ end
 
         assert(answers.uniq.length >= 3, "answers.uniq.length = #{answers.uniq.length} answers.length = #{answers.length}")
 
-
+end
+end
