@@ -1,5 +1,5 @@
-require 'rps'
-require 'test/unit'
+require "rpslib"
+require "test/unit"
 
 class TestRockPaperScissors < Test::Unit::TestCase
 
