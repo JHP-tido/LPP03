@@ -12,17 +12,17 @@ class RockPaperScissors
 
             raise SyntaxError, "error"
 
-                computer_throw = throws.sample
+                computer_throw = @@throws.sample
 
-                if player_throw == @@trows.sample
-                        "empate"
+                if player_throw == computer_throw
+                       puts  "empate"
                 elsif player_throw == @@defeat[computer_throw]
-                        "el ordenador gana"
+                       puts  "el ordenador gana"
                 else
-                        "el humano gana"
+                       puts  "el humano gana"
                 end
 		end
 
 	end
-end
-~           
+
+end~           
