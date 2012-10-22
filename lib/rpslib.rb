@@ -8,21 +8,21 @@ class RockPaperScissors
 
                 def play (player_throw)
 
-                player_trow = player_throw.to_sym
+                player_throw = player_throw.to_sym
 
-            raise SyntaxError, "error"
+            #raise SyntaxError, "error"
 
                 computer_throw = @@throws.sample
 
                 if player_throw == computer_throw
-                       puts  "empate"
+                       "empate"
                 elsif player_throw == @@defeat[computer_throw]
-                       puts  "el ordenador gana"
+                       "el ordenador gana"
                 else
-                       puts  "el humano gana"
+                       "el humano gana"
                 end
 		end
 
 	end
 
-end~           
+end         
